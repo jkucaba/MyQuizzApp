@@ -26,6 +26,6 @@ class MainActivity : AppCompatActivity() {
                 finish()                //zamyka pierwsze okno
             }
         }
-    }
+    }//siemano test
 
 }
