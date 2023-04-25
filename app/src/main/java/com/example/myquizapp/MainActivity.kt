@@ -22,10 +22,11 @@ class MainActivity : AppCompatActivity() {
                     "Podaj imię :////", Toast.LENGTH_LONG ).show()
             } else {
                 val intent = Intent(this, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, etName.text.toString())
                 startActivity(intent)   //uruchamia aktywność ale nie zamyka pierwszego okna
                 finish()                //zamyka pierwsze okno
             }
         }
     }
-        //branch
+
 }
